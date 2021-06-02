@@ -1,16 +1,12 @@
-# ML CW3 Report
+```
+Course project of CSE463 Machine Learning, UNIST
+```
 
-- **Name** : Solang Kim
-- **Student ID** : 20181041
-- **E-mail** : solangii@unist.ac.kr
-
----
-
-## Implement Detail
+ ## Implement Detail
 
 ### My MLP Architecture
 
-<img src="/Users/kimsolang/Library/Application Support/typora-user-images/image-20210602030843722.png" alt="image-20210602030843722" style="zoom:50%;" />
+<img src="img/myMLP.png" />
 
 ### Weight Initialization
 
@@ -36,9 +32,9 @@ $$
 
 ## Performance
 
-| Loss                                                         | 2D visualization                                             | 3D visualization                                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![loss](/Users/kimsolang/PycharmProjects/MLCW/img/loss_plot.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![3d](/Users/kimsolang/PycharmProjects/MLCW/img/3d_plot.jpg) |
+| Loss                       | 2D visualization       | 3D visualization       |
+| -------------------------- | ---------------------- | ---------------------- |
+| ![loss](img/loss_plot.jpg) | ![2d](img/2d_plot.jpg) | ![3d](img/3d_plot.jpg) |
 
 
 
@@ -48,17 +44,17 @@ Except for the variable values regulated in the experiment, all values(hyper-par
 
 ### Learning Rate
 
-| lr = 1 (base)                                                | lr = 0.1                                                   | lr = 0.01                                                   |
-| ------------------------------------------------------------ | ---------------------------------------------------------- | ----------------------------------------------------------- |
-| ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/lr0.1.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/lr0.01.jpg) |
+| lr = 1 (base)                                                | lr = 0.1             | lr = 0.01             |
+| ------------------------------------------------------------ | -------------------- | --------------------- |
+| ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![2d](img/lr0.1.jpg) | ![2d](img/lr0.01.jpg) |
 
 It appears to have found the appropriate learning rate value.
 
 ### Epochs
 
-| Epochs = 50 (base)                                           | Epochs = 30                                                  | Epochs = 10                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/epoch30.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/epoch10.jpg) |
+| Epochs = 50 (base)     | Epochs = 30            | Epochs = 10            |
+| ---------------------- | ---------------------- | ---------------------- |
+| ![2d](img/2d_plot.jpg) | ![2d](img/epoch30.jpg) | ![2d](img/epoch10.jpg) |
 
 Given the loss plot(loss graph), there has been no significant difference since it dropped sharply from about 10000-20000(iters), indicating that learning has been stable since epochs was about 15–30. Therefore, there is no significant difference between 30 and 50. I think It's okay to stop learning at a location where loss is moderately reduced(about epochs 15-30).
 
@@ -67,8 +63,8 @@ Given the loss plot(loss graph), there has been no significant difference since 
 - `h1`: # of 1st hidden layer's neuron
 - `h2`: # of 2nd hidden layer's neuron
 
-| h1 = 100, h2 = 50 (base)                                     | h1 = 10, h2 = 5                                              | h1 = 5, h2 = 2                                               |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/h1_10-h2_5.jpg) | ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/h1_5-h2_2.jpg) |
+| h1 = 100, h2 = 50 (base) | h1 = 10, h2 = 5           | h1 = 5, h2 = 2           |
+| ------------------------ | ------------------------- | ------------------------ |
+| ![2d](img/2d_plot.jpg)   | ![2d](img/h1_10-h2_5.jpg) | ![2d](img/h1_5-h2_2.jpg) |
 
 It appears to have found the appropriate # of neuron value.
