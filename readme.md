@@ -46,7 +46,7 @@ Except for the variable values regulated in the experiment, all values(hyper-par
 
 | lr = 1 (base)                                                | lr = 0.1             | lr = 0.01             |
 | ------------------------------------------------------------ | -------------------- | --------------------- |
-| ![2d](/Users/kimsolang/PycharmProjects/MLCW/img/2d_plot.jpg) | ![2d](img/lr0.1.jpg) | ![2d](img/lr0.01.jpg) |
+| ![2d](img/2d_plot.jpg) | ![2d](img/lr0.1.jpg) | ![2d](img/lr0.01.jpg) |
 
 It appears to have found the appropriate learning rate value.
 
