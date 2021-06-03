@@ -2,6 +2,12 @@
 Course project of CSE463 Machine Learning, UNIST
 ```
 
+## Task
+
+<img src="img/fig1.png" />
+
+Our task is to train an MLP on$X_{tr}$, apply the trained MLP to the test set $X_{te}$, and visualize the corresponding test results. Our data are visualized in Fig. 1: The training set consists of 630 pairs of inputs and the corresponding ground-truth outputs: In Fig. 1(left), the location of each dot represents the corresponding training input $(x_1, x_2)$-coordinate values) while the class labels are highlighted by color. The accompanying `Trn.txt` file contains this training set: For each line, the first two columns represent an input $x = [x_1,x_2]^⊤$ and the third column provides the corresponding class label (0 or 1). The test set consists of 10,200 data instances and they are provided in `Tst.txt` file where two columns represent a test input per line.
+
  ## Implement Detail
 
 ### My MLP Architecture
